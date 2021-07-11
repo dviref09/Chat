@@ -1,5 +1,5 @@
 function clock() {
-    setInterval(updateClock, 10);
+    setInterval(updateClock, 1);
 
     function updateClock() {
         var date = new Date();
@@ -8,6 +8,6 @@ function clock() {
         minutes = date.getMinutes();
         hours = date.getHours();
         document.getElementById("clock").innerHTML =
-            hours + ":" + minutes + ":" + seconds;
+            hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
     }
 }
