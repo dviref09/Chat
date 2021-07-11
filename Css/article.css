@@ -1,0 +1,16 @@
+article {
+    margin: 5vh 5vw;
+    width: 90vw;
+}
+article #messages {
+    overflow: auto;
+    height: 66vh;
+    width: 90vw;
+    background-color: lightgray;
+}
+article #form {
+    margin-top: 5vh;
+    height: 15vh;
+    width: 90vw;
+    background-color: lightgray;
+}

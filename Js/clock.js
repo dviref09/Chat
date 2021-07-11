@@ -1,9 +1,13 @@
 function clock() {
     setInterval(updateClock, 10);
-    
+
     function updateClock() {
-        var date = new Date()
-        second = date.getSeconds()
-        document.getElementById("clock").innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        var date = new Date();
+        milliseconds = date.getMilliseconds();
+        seconds = date.getSeconds();
+        minutes = date.getMinutes();
+        hours = date.getHours();
+        document.getElementById("clock").innerHTML =
+            hours + ":" + minutes + ":" + seconds;
     }
 }
