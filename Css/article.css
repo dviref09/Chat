@@ -14,3 +14,49 @@ article #form {
     width: 90vw;
     background-color: lightgray;
 }
+article #form form input[name="send"] {
+    width: 16.5%;
+    height: 90%;
+    margin: 5px 1% 0px;
+}
+article #form form input[name="text"] {
+    width: 80%;
+    margin-top: 5px;
+    margin-right: 0.5%;
+}
+@media only screen and (min-width: 1024px) {
+    article #form form input[name="send"] {
+        width: 16.5%;
+        height: 90%;
+        margin: 5px 1% 0px;
+    }
+    article #form form input[name="text"] {
+        width: 80%;
+        margin-top: 5px;
+        margin-right: 0.5%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    article #form form input[name="send"] {
+        width: 16.5%;
+        height: 90%;
+        margin: 5px 1% 0px;
+    }
+    article #form form input[name="text"] {
+        width: 80%;
+        margin-top: 5px;
+        margin-right: 0.5%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    article #form form input[name="send"] {
+        width: 16.5%;
+        height: 90%;
+        margin: 5px 1% 0px;
+    }
+    article #form form input[name="text"] {
+        width: 75%;
+        margin-top: 5px;
+        margin-right: 0.5%;
+    }
+}

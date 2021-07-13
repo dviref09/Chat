@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat App</title>
         <!--Style Links-->
         <link rel="stylesheet" href="Css\style.css?v=<?php echo time()?>" />
@@ -11,7 +12,7 @@
         <script src="Js\clock.js?v=<?php echo time()?>"></script>
     </head>
     <body onload="clock()">
-        <header id="header">
+        <header id="header" dir="ltr">
             <h1>Chat App</h1>
             <div id="clock"></div>
         </header>
@@ -19,7 +20,8 @@
             <div id="messages"></div>
             <div id="form">
                 <form>
-                    <input />
+                    <input type="text" name="text" />
+                    <input type="button" value="Send" name="send">
                 </form>
             </div>
         </article>
