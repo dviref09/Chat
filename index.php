@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
     <head>
@@ -10,6 +15,7 @@
         <link rel="stylesheet" href="Css\header.css?v=<?php echo time()?>" />
         <link rel="stylesheet" href="Css\article.css?v=<?php echo time()?>" />
         <script src="Js\clock.js?v=<?php echo time()?>"></script>
+        <script src="Js\send.js?v=<?php echo time()?>"></script>
     </head>
     <body onload="clock()">
         <header id="header" dir="ltr">
@@ -18,12 +24,32 @@
         </header>
         <article>
             <div id="messages"></div>
-            <div id="form">
-                <form>
+            <?php
+            
+            if (isset($_SESSION['name'])) {
+                echo '
+                <div id="form">
+                    <form name="form" action="index.php" method="POST">
+                        <textarea name="text"></textarea>
+                        <input type="button" value="Send" name="send" onclick="send_message()">
+                    </form>
+                </div>';
+                echo $_SESSION['name'];
+            }
+            else {
+                echo '
+                <form action="index.php" method="POST">
                     <input type="text" name="text" />
-                    <input type="button" value="Send" name="send">
-                </form>
-            </div>
+                    <br />
+                    <input type="submit" name="submit" />
+                </form>';
+            }
+            if (isset($_POST['submit'])){
+                $_SESSION['name'] = $_POST['text'];
+            }
+
+            
+            ?>
         </article>
     </body>
 </html>

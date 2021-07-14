@@ -14,15 +14,17 @@ article #form {
     width: 90vw;
     background-color: lightgray;
 }
-article #form form input[name="send"] {
-    width: 16.5%;
-    height: 90%;
-    margin: 5px 1% 0px;
+article #form form {
+    height: 100%;
+    width: 100%
 }
-article #form form input[name="text"] {
-    width: 80%;
-    margin-top: 5px;
-    margin-right: 0.5%;
+article form {
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+article form input[name="text"] {
+    
 }
 @media only screen and (min-width: 1024px) {
     article #form form input[name="send"] {
@@ -30,8 +32,9 @@ article #form form input[name="text"] {
         height: 90%;
         margin: 5px 1% 0px;
     }
-    article #form form input[name="text"] {
+    article #form form textarea[name="text"] {
         width: 80%;
+        height: 90%;
         margin-top: 5px;
         margin-right: 0.5%;
     }
@@ -42,8 +45,9 @@ article #form form input[name="text"] {
         height: 90%;
         margin: 5px 1% 0px;
     }
-    article #form form input[name="text"] {
-        width: 80%;
+    article #form form textarea[name="text"] {
+        width: 79%;
+        height: 90%;
         margin-top: 5px;
         margin-right: 0.5%;
     }
@@ -54,8 +58,9 @@ article #form form input[name="text"] {
         height: 90%;
         margin: 5px 1% 0px;
     }
-    article #form form input[name="text"] {
+    article #form form textarea[name="text"] {
         width: 75%;
+        height: 90%;
         margin-top: 5px;
         margin-right: 0.5%;
     }
