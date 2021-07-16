@@ -19,7 +19,7 @@ session_start();
     </head>
     <body onload="clock()">
         <header id="header" dir="ltr">
-            <h1>Chat App</h1>
+            <h1><a href="/">Chat App</a></h1>
             <div id="clock"></div>
         </header>
         <article>
@@ -34,7 +34,6 @@ session_start();
                         <input type="button" value="Send" name="send" onclick="send_message()">
                     </form>
                 </div>';
-                echo $_SESSION['name'];
             }
             else {
                 echo '

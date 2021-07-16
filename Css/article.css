@@ -21,10 +21,25 @@ article #form form {
 article form {
     text-align: center;
     background-color: whitesmoke;
-    
+    margin-top: 5px;
 }
 article form input[name="text"] {
-    
+    height: 9vh;
+    width: 30vw;
+    font-size: 3rem;
+    border-radius: 5px;
+    direction: ltr;
+    border-width: 1px;
+    outline: none;
+}
+article form input[name="submit"] {
+    margin-top: 5px;
+    height: 5vh;
+    width: 7vw;
+}
+article #form form input[name="send"] {
+    position: relative;
+    bottom: 50px;
 }
 @media only screen and (min-width: 1024px) {
     article #form form input[name="send"] {
@@ -38,12 +53,24 @@ article form input[name="text"] {
         margin-top: 5px;
         margin-right: 0.5%;
     }
+    article form input[name="text"] {
+        height: 9vh;
+        width: 30vw;
+        font-size: 3rem;
+        border-radius: 5px;
+    }
+    article form input[name="submit"] {
+        margin-top: 5px;
+        height: 5vh;
+        width: 7vw;
+    }
 }
 @media only screen and (max-width: 1024px) {
     article #form form input[name="send"] {
-        width: 16.5%;
+        width: 15.75%;
         height: 90%;
         margin: 5px 1% 0px;
+        display: block;
     }
     article #form form textarea[name="text"] {
         width: 79%;
@@ -51,17 +78,39 @@ article form input[name="text"] {
         margin-top: 5px;
         margin-right: 0.5%;
     }
+    article form input[name="text"] {
+        height: 9vh;
+        width: 50vw;
+        font-size: 2.5rem;
+        border-radius: 5px;
+    }
+    article form input[name="submit"] {
+        margin-top: 5px;
+        height: 5vh;
+        width: 7vw;
+    }
 }
 @media only screen and (max-width: 480px) {
     article #form form input[name="send"] {
-        width: 16.5%;
+        width: 15%;
         height: 90%;
         margin: 5px 1% 0px;
     }
     article #form form textarea[name="text"] {
-        width: 75%;
+        width: 60%;
         height: 90%;
         margin-top: 5px;
         margin-right: 0.5%;
+    }
+    article form input[name="text"] {
+        height: 9vh;
+        width: 70vw;
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+    article form input[name="submit"] {
+        margin-top: 5px;
+        height: 5vh;
+        width: 15vw;
     }
 }
