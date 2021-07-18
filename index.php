@@ -29,22 +29,20 @@ session_start();
             if (isset($_SESSION['name'])) {
                 echo '
                 <div id="form">
-                    <form name="form" action="index.php" method="POST">
-                        <textarea name="text"></textarea>
-                        <input type="button" value="Send" name="send" onclick="send_message()">
-                    </form>
+                    <textarea name="text"></textarea>
+                    <button name="send" onclick="send_message()">Send</button>
                 </div>';
             }
             else {
                 echo '
                 <form action="index.php" method="POST">
-                    <input type="text" name="text" />
+                    <input type="text" name="name" />
                     <br />
                     <input type="submit" name="submit" />
                 </form>';
             }
             if (isset($_POST['submit'])){
-                $_SESSION['name'] = $_POST['text'];
+                $_SESSION['name'] = $_POST['name'];
             }
 
             

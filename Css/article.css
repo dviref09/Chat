@@ -14,16 +14,12 @@ article #form {
     width: 90vw;
     background-color: lightgray;
 }
-article #form form {
-    height: 100%;
-    width: 100%
-}
 article form {
     text-align: center;
     background-color: whitesmoke;
     margin-top: 5px;
 }
-article form input[name="text"] {
+article form input[name="name"] {
     height: 9vh;
     width: 30vw;
     font-size: 3rem;
@@ -37,17 +33,17 @@ article form input[name="submit"] {
     height: 5vh;
     width: 7vw;
 }
-article #form form input[name="send"] {
+article #form button[name="send"] {
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
 }
 @media only screen and (min-width: 1024px) {
-    article #form form input[name="send"] {
+    article #form button[name="send"] {
         width: 16.5%;
         height: 90%;
         margin: 5px 1% 0px;
     }
-    article #form form textarea[name="text"] {
+    article #form textarea[name="text"] {
         width: 80%;
         height: 90%;
         margin-top: 5px;
@@ -66,13 +62,13 @@ article #form form input[name="send"] {
     }
 }
 @media only screen and (max-width: 1024px) {
-    article #form form input[name="send"] {
+    article #form button[name="send"] {
         width: 15.75%;
         height: 90%;
         margin: 5px 1% 0px;
         display: block;
     }
-    article #form form textarea[name="text"] {
+    article #form textarea[name="text"] {
         width: 79%;
         height: 90%;
         margin-top: 5px;
@@ -91,12 +87,12 @@ article #form form input[name="send"] {
     }
 }
 @media only screen and (max-width: 480px) {
-    article #form form input[name="send"] {
+    article #form button[name="send"] {
         width: 15%;
         height: 90%;
         margin: 5px 1% 0px;
     }
-    article #form form textarea[name="text"] {
+    article #form textarea[name="text"] {
         width: 60%;
         height: 90%;
         margin-top: 5px;
