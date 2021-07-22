@@ -1,9 +1,10 @@
 <?php
 
-session_start()
+session_start();
 
 $conn = mysqli_connect('localhost', 'dvir', 'dvirfarkash09', 'chat');
 
-$result = $conn->query('INSERT INTO `messages`(`text`, `writer`) VALUES(`'.$_GET['message'].'`, `'.$_SESSION['name'].'`)')
+$message = htmlspecialchars($_GET['message']);
+$result = $conn->query('INSERT INTO `messages`(`text`, `writer`) VALUES ("'.$message.'","'.$_SESSION['name'].'")');
 
 ?>

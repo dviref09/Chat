@@ -23,9 +23,19 @@ session_start();
             <div id="clock"></div>
         </header>
         <article>
-            <div id="messages"></div>
+            <div id="messages">
+                <?php
+                
+                require_once 'Php/show_messages.php';
+
+                ?>
+            </div>
             <?php
-            
+
+            if (isset($_POST['submit'])){
+                $_SESSION['name'] = $_POST['name'];
+            }
+
             if (isset($_SESSION['name'])) {
                 echo '
                 <div id="form">
@@ -41,11 +51,7 @@ session_start();
                     <input type="submit" name="submit" />
                 </form>';
             }
-            if (isset($_POST['submit'])){
-                $_SESSION['name'] = $_POST['name'];
-            }
 
-            
             ?>
         </article>
     </body>
