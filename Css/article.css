@@ -37,6 +37,9 @@ article #form button[name="send"] {
     position: relative;
     bottom: 60px;
 }
+article div#messages h2.names {
+    margin: 5px 5px 8px 0px;
+}
 @media only screen and (min-width: 1024px) {
     article #form button[name="send"] {
         width: 16.5%;
