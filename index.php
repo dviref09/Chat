@@ -23,7 +23,13 @@ session_start();
             <div id="clock"></div>
         </header>
         <article>
-            <div id="messages"></div>
+            <div id="messages">
+                <?php
+                
+                require_once 'Php/show_messages.php';
+                
+                ?>
+            </div>
             <?php
             
             if (isset($_SESSION['name'])) {
