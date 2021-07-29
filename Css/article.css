@@ -2,12 +2,7 @@ article {
     margin: 5vh 5vw;
     width: 90vw;
 }
-article #messages {
-    overflow: auto;
-    height: 66vh;
-    width: 90vw;
-    background-color: lightgray;
-}
+/* THE FORMS DESIGN*/
 article #form {
     margin-top: 5vh;
     height: 15vh;
@@ -37,9 +32,29 @@ article #form button[name="send"] {
     position: relative;
     bottom: 60px;
 }
-article div#messages h2.names {
-    margin: 5px 5px 8px 0px;
+/********/
+/*THE MESSAGES DESIGN*/
+article #messages {
+    overflow: auto;
+    height: 66vh;
+    width: 90vw;
+    background-color: lightgray;
 }
+article div#messages div.message {
+    border: solid lightblue 2px;
+    border-radius: 20px;
+    margin: 2px 5px;
+}
+article div#messages div.message h2.names {
+    margin: 5px 0px 8px 0px;
+}
+article div#messages div.message h2,
+h3,
+p {
+    padding: 0px 10px 0px 0px;
+}
+/*******/
+/* THE MEDIA QUERIES*/
 @media only screen and (min-width: 1024px) {
     article #form button[name="send"] {
         width: 16.5%;
@@ -113,3 +128,4 @@ article div#messages h2.names {
         width: 15vw;
     }
 }
+/**/
