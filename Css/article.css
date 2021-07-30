@@ -41,9 +41,24 @@ article #messages {
     background-color: lightgray;
 }
 article div#messages div.message {
-    border: solid lightblue 2px;
+    border: solid rgb(70, 180, 215) 2px;
     border-radius: 20px;
     margin: 2px 5px;
+    background-color: rgb(125, 195, 215);
+    transition: 0.5s;
+}
+article div#messages div.message:hover {
+    background-color: rgb(70, 180, 215);
+    cursor: pointer;
+}
+article div#messages div.message button[name="button_message"] {
+    background-color: rgb(94, 94, 94);
+    position: relative;
+    cursor: pointer;
+    border: none;
+    height: 20px;
+    width: 10px;
+    right: calc(87vw - 20px);
 }
 article div#messages div.message h2.names {
     margin: 5px 0px 8px 0px;
