@@ -27,7 +27,7 @@ session_start();
                 <?php
                 
                 require_once 'Php/show_messages.php';
-
+                
                 ?>
             </div>
             <?php
