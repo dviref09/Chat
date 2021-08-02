@@ -8,6 +8,7 @@ article #form {
     height: 15vh;
     width: 90vw;
     background-color: lightgray;
+    display: flex;
 }
 article form {
     text-align: center;
@@ -27,10 +28,6 @@ article form input[name="submit"] {
     margin-top: 5px;
     height: 5vh;
     width: 7vw;
-}
-article #form button[name="send"] {
-    position: relative;
-    bottom: 60px;
 }
 /********/
 /*THE MESSAGES DESIGN*/
@@ -79,15 +76,18 @@ p {
 /* THE MEDIA QUERIES*/
 @media only screen and (min-width: 1024px) {
     article #form button[name="send"] {
-        width: 16.5%;
+        flex-basis: 16.5%;
         height: 90%;
-        margin: 5px 1% 0px;
+        margin-top: 5px;
     }
     article #form textarea[name="text"] {
-        width: 80%;
+        flex-basis: 82%;
         height: 90%;
         margin-top: 5px;
         margin-right: 0.5%;
+    }
+    article #form {
+        column-gap: 0.5%;
     }
     article form input[name="text"] {
         height: 9vh;
