@@ -40,6 +40,13 @@ article #messages {
     width: 90vw;
     background-color: lightgray;
 }
+article #messages::-webkit-scrollbar {
+    width: 10px;
+}
+article #messages::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgb(30, 30, 30);
+}
 article div#messages div.message {
     border: solid rgb(70, 180, 215) 2px;
     border-radius: 20px;

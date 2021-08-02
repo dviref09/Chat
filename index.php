@@ -16,8 +16,9 @@ session_start();
         <link rel="stylesheet" href="Css\article.css?v=<?php echo time()?>" />
         <script src="Js\clock.js?v=<?php echo time()?>"></script>
         <script src="Js\send.js?v=<?php echo time()?>"></script>
+        <script src="Js\update.js?v=<?php echo time()?>"></script>
     </head>
-    <body onload="clock()">
+    <body onload="init()">
         <header id="header" dir="ltr">
             <h1><a href="/">Chat App</a></h1>
             <div id="clock"></div>
