@@ -9,7 +9,7 @@ for ($i = 0; $i < $result->num_rows; $i++) {
     echo '<div class="message"><button name="button_message"></button><h2 class="names">'.$fetch[3].'</h2><h3 class="time">'.$fetch[1].'</h3><p class="message">'.$fetch[2].'</p></div>';
     if ($i == $result->num_rows - 1) {
         $_SESSION['index'] = $fetch[0];
-        echo $_SESSION['index'];
+        $_SESSION['new_index'] = $fetch[0];
     }
 }
 
