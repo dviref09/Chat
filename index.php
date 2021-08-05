@@ -13,7 +13,7 @@ session_start();
         <link rel="stylesheet" href="Css\style.css?v=<?php echo time()?>" />
         <link rel="stylesheet" href="Css\reset.css?v=<?php echo time()?>" />
         <link rel="stylesheet" href="Css\header.css?v=<?php echo time()?>" />
-        <link rel="stylesheet" href="Css\article.css?v=<?php echo time()?>" />
+        <link rel="stylesheet" href="Css\d.css?v=<?php echo time()?>" />
         <script src="Js\clock.js?v=<?php echo time()?>"></script>
         <script src="Js\send.js?v=<?php echo time()?>"></script>
         <script src="Js\update.js?v=<?php echo time()?>"></script>
@@ -39,10 +39,10 @@ session_start();
 
             if (isset($_SESSION['name'])) {
                 echo '
-                <form id="form">
+                <div id="form">
                     <textarea name="text"></textarea>
                     <button name="send" onclick="send_message()">Send</button>
-                </form>';
+                </div>';
             }
             else {
                 echo '

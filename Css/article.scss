@@ -1,3 +1,4 @@
+$divs_background: lightgray;
 article {
     margin: 5vh 5vw;
     width: 90vw;
@@ -7,13 +8,15 @@ article #form {
     margin-top: 5vh;
     height: 15vh;
     width: 90vw;
-    background-color: lightgray;
+    background-color: $divs_background;
     display: flex;
 }
-article form {
-    text-align: center;
-    background-color: whitesmoke;
-    margin-top: 5px;
+article {
+    form {
+        text-align: center;
+        background-color: whitesmoke;
+        margin-top: 5px;
+    }
 }
 article form input[name="name"] {
     height: 9vh;
@@ -35,7 +38,7 @@ article #messages {
     overflow: auto;
     height: 66vh;
     width: 90vw;
-    background-color: lightgray;
+    background-color: $divs_background;
 }
 article #messages::-webkit-scrollbar {
     width: 10px;
