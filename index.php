@@ -39,10 +39,10 @@ session_start();
 
             if (isset($_SESSION['name'])) {
                 echo '
-                <div id="form">
+                <form id="form">
                     <textarea name="text"></textarea>
                     <button name="send" onclick="send_message()">Send</button>
-                </div>';
+                </form>';
             }
             else {
                 echo '

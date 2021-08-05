@@ -1,9 +1,7 @@
 function send_message() {
     xmlhttp = new XMLHttpRequest();
+    document.forms[0].reset();
     xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4) {
-            document.querySelector('[name="text"]').innerHTML = "";
-        }
         if (xmlhttp.readyState == 4 && xmlhttp.status != "200") {
             alert("!השליחה נכשלה");
         }
